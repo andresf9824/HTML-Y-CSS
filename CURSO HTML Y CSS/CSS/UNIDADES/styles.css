@@ -20,4 +20,19 @@ p {
     color: #555
 }
 
-/*PIXELES: tamaño de elementos, alto, ancho, tipografia, margin y padding.
+/*
+Hay medidas absolutas, (px), y otras relativas como %
+PIXELES: tamaño de elementos, alto, ancho, tipografia, margin y padding.
+EM: pregunta por el font size del elemento padre, y lo multiplica por el numero que asignamos.
+ Por decir, si tengo un p en un div, el div vale 14px, entonces el valor de p seria 28 px (2em). 
+ Los textos no llevan medidas en % 
+ REM:  es como em, pero rem busca en el elemento raiz, es decir, html si html 40pxentonces rem igual 40 px, 
+ font size (es la referencia), tamañaño raiz.
+ 16px font size de los navegadores por defecto.
+
+ ¿CUANDO LAS USAMOS CADA UNA?
+
+ EM y REM: para tamaño fuente, espaciados, tipografia en general.
+EM, %, REM, vLayout, vh, vw tamaño o dimensiones de los elementos (responsive design).
+PX: Algo preciso, algo mas exacto, imagenes para los bordes.
+ */
