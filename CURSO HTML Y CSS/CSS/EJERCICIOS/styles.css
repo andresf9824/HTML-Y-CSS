@@ -1,0 +1,31 @@
+.card {
+    background: red;
+    color: white;
+    width: 300px;
+    margin-top: 20px;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 10px;
+    font-size: 22px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 100px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 9px;
+    padding: 20px;
+    background-color: aqua;
+    text-align: justify;
+}

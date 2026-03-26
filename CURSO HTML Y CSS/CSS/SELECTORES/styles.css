@@ -1,0 +1,35 @@
+.ingrediente-faltante /* Selector por clase, para varios elementos*/
+
+{
+    
+    color: red;} 
+
+#ingrediente-secreto /* Selector por id, para un solo elemento*/
+
+{
+
+    color: blue
+}
+
+li /* Selector por elemento*/
+
+{
+
+    color: grey;
+}
+
+/* Propiedades de texto */
+p {
+
+    color: green;
+    font-family: "Tahoma";
+    font-size: 13px;
+    font-weight: bold; /* Negrita, etiqueta strong para resaltar en html*/ 
+    font-style: oblique;
+    text-align: left;
+    text-decoration: underline;
+    line-height: normal; /* espaciado entre linea y linea de los parrafos */
+    letter-spacing: normal; /*espacio entre letras */
+    text-transform: lowercase;
+    
+}

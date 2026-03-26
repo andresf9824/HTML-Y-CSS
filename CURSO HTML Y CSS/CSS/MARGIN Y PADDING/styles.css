@@ -1,0 +1,19 @@
+/*.Formulario  
+    {
+
+        background: red;
+        padding: 10px;
+    }
+
+.Formulario_input 
+    {
+        padding: 10px; padding me ayuda a separar el contenido de los bordes, es el espacio que hay entre los bordes y el contenido }
+    */
+     
+.Box {
+
+        background: red;
+        height:50px;
+        width: 50px;
+        margin: 10px
+}
