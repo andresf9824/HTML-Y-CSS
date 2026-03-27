@@ -1,0 +1,35 @@
+body {
+
+    margin: 0;
+}
+
+
+.box {
+
+    width: 300px;
+    height: 400px;
+    background: #e2e2e2;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 20px 20px 50px 10px ;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+p {
+    list-style: none;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 14px;
+    text-shadow: 0 0 4px red;
+}
+
+img {
+
+    height: 150px;
+    
+
+}
