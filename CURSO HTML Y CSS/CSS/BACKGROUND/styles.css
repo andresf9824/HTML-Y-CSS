@@ -1,0 +1,27 @@
+body {
+
+    background-color: rgb(0, 255, 0);
+    /* Estas 3 líneas centran el contenido */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    
+    /* Importante: el body necesita una altura para saber qué es "el centro" */
+    height: 100vh;
+}
+
+
+.box {
+
+    width: 450px;
+    height: 615px;
+    margin: 20px;
+    background-color: transparent;
+    background-image: url("https://i.pinimg.com/736x/16/00/40/160040945d7ad895d9fe0a3d0a320a11.jpg");
+    background-size: contain; /*la ajusta para cubrir todo el div que es donde esta metida sin deformarse*/
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+}
+
