@@ -10,13 +10,23 @@
     <form>
         <h2> Formulario de contacto</h2>
         <div class="form_input">
-            <input type="text" placeholder="Nombre completo">
+            <label for="nombre">Nombre
+            <input type="text" placeholder="Nombre completo" id="nombre">
+            </label>
         </div>
         <div class="form_input">
-            <input type="email" placeholder="Email  completo">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email  completo" id="email">
         </div>
         <div class="form_input" >
-            <textarea placeholder="Deja tu mensaje"> </textarea>
+            <label for="mensaje">Mensaje
+            <textarea placeholder="Deja tu mensaje" id="mensaje"> </textarea>
+            </label>
+        </div> 
+        <div class="form_input">
+            <label for="terminos">Acepto terminos y condiciones
+            <input type="checkbox" id="terminos" class="checkbox">
+            </label>
         </div>
     </form>
     

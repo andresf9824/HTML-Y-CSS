@@ -50,3 +50,16 @@ textarea {
 
 
 }
+
+label {
+    font-size: 0.88em;
+    line-height: 2
+
+}
+
+.checkbox {
+    width: auto;
+    margin-left: 10px;
+    height: 12px;
+
+}
