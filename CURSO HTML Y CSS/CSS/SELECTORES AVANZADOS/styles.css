@@ -1,12 +1,46 @@
-.ingredientes-faltante {
+/* SELECTOR POR ATRIBUTO 
 
-    color: red;
+img [src ="RealMadrid.png"] {
+    width: 50%;
+} */
+
+/* TODO LO QUE TENGA CON $ SIGNIFICA:"UNA IMAGEN CON EL ATRIBUTO SOURCE, QUE TENGA LO QUE SEA Y TERMINE EN PNG" 
+
+img[src $="png"] {
+    width: 50%;
+    height: 30px;
+} */
+
+/* TODO LO QUE TENGA ^ SIGNIFICA:"UNA IMAGEN CON EL ATRIBUTO SOURCE, QUE EMPIECE CON REAL Y TERMINE CON LO QUE SEA" */
+
+img[src ^="Real"] {
+    width: 100%;
+    height: 100%;
+} 
+
+/* SELECTORES DE FORMA DESCEDENTE*/
+
+ul li {
+
+    color: red; /*Dale color rojo a los li que están dentro de un "ul"*/ 
+    
 }
 
-li {
-    color:rgb(181, 184, 184);
+/* SELECTOR POR HIJO DIRECTO*/
+
+/* ul > strong  signific que tiene que ser hijo directo (strong) de ul*/
+
+/*SELECTOR ADYACENTE: Es el que esta a continuacion inmediamente, a mi hermano
+
+h1 + p {
+
+    color: blue; }  dale color azul a todos los p que estan despues de un h1*/
+
+
+/*SELECTOR DE HERMANOS GENERALES*/
+
+h1 ~ p {
+
+    color: red; /* Que compartan el mismo padre*/
 }
 
-.ingrediente-secreto {
-    color: blue;
-}
