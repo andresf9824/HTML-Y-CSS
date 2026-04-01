@@ -22,17 +22,17 @@ h1:active {
 
 /*Seleccionando el primer LI*/
 
-li:first-child {
+/*li:first-child {
 
        color: yellow;
-}
+}*/
 
 
 /*Seleccionando el ultimo LI*/
 
-li:last-child {
-       color: blue  /*Con esta pseudoclase solo podemos seleccionar al primero y al ultimo*/
-}
+/*li:last-child {
+       color: blue  /*Con esta pseudoclase solo podemos seleccionar al primero y al ultimo
+}*/
 
 /*si queremos seleccionar a un elemento en la posicion n, lo hacemos de la siguiente manera*/
 
@@ -40,9 +40,9 @@ li:nth-child(4) {
        color: pink;
 }
 
-.lista li:not(.excluido) {
-       color: green;   /*Dale el color verde a los que NO tengan la clase excluido*/
-}
+/*.lista li:not(.excluido) {
+       color: green;   Dale el color verde a los que NO tengan la clase excluido
+}*/
 
 .lista:hover {
        color: red;
@@ -58,12 +58,12 @@ a:visited {
 
 /*Si hay un input invalido*/
 
-input:invalid {
-       color:red;
+label:has(input:valid) {
+       color: green;
 }
 
-input:valid {
-       color:green;
+label:has(input:invalid) {
+       color:red;
 }
 
 label {
@@ -73,3 +73,28 @@ label {
 al usar display block, le digo al elemento que se baje a otra linea,
                             ahi le puedo dar ancho, alto. Cuando quiero poner algo debajo de otra cosa, este es, que ocupe toda la linea
 Flex se usa para organizar hijos dentro de un contenedor*/
+
+
+/*PSEUDOCLASES IS, WHERE, HAS*/
+
+/*modeificando las clases elemento 1, elemento2 y elemento3 que estan dentro de un section*/
+
+section :is(.elemento1, .elemento2, .elemento3 ) {
+
+       color:aqua;   /*Usamos el is para agrupar, dond eesta el is, podemos usar WHERE, pero tiene menos especificidad, 
+       no cambia la especificidad. Is si la cambia*/
+
+}
+
+/*HAS: se le da al elemento padre*/
+
+section:has(.elemento1) {
+
+       background-color: black;
+}
+
+/*En caso de que al UL lo siga un div, modificamos el ul */
+
+ul:has(+div) {
+       color:blue;
+}
