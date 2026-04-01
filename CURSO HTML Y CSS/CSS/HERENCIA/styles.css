@@ -1,0 +1,32 @@
+/*
+
+Algunos estilos (propiedades CSS) se heredan de un elemento padre a sus hijos
+
+<div>
+  <p>Texto</p>
+</div>
+
+div {
+  color: blue;
+}
+
+El <p> será azul aunque no tenga color definido
+
+Pero ojo: no todo se hereda
+
+En CSS:
+
+Se heredan (ejemplos)
+color
+font-family
+font-size
+line-height
+
+NO se heredan (ejemplos)
+margin
+padding
+border
+background
+
+*/
+
