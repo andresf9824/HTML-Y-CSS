@@ -1,0 +1,75 @@
+/*las pseudoclases son como palabras especificas para referenciar elementos y darles otro estilo
+       mdn pseudoclases  */
+
+h1 {
+color: blue;
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+
+}
+
+h1:hover {
+
+color: aqua;
+background-color: beige;   
+
+       } /* la pseudoclase hover sirve para cambiar el color de un titulo, parrafo cuando pasamos el mouse por encima*/
+
+h1:active {
+
+       color: red; /*Cambie de color el elemento cuando le damos click*/
+       }     
+
+/*Seleccionando el primer LI*/
+
+li:first-child {
+
+       color: yellow;
+}
+
+
+/*Seleccionando el ultimo LI*/
+
+li:last-child {
+       color: blue  /*Con esta pseudoclase solo podemos seleccionar al primero y al ultimo*/
+}
+
+/*si queremos seleccionar a un elemento en la posicion n, lo hacemos de la siguiente manera*/
+
+li:nth-child(4) {
+       color: pink;
+}
+
+.lista li:not(.excluido) {
+       color: green;   /*Dale el color verde a los que NO tengan la clase excluido*/
+}
+
+.lista:hover {
+       color: red;
+}
+
+a:link {
+       color:red; /*si el enlace no ha sido visitado*/
+}                                  
+
+a:visited {
+       color:greenyellow; /*si el enlace  sido visitado*/
+}
+
+/*Si hay un input invalido*/
+
+input:invalid {
+       color:red;
+}
+
+input:valid {
+       color:green;
+}
+
+label {
+       display: block;    
+       margin-top: 10px; 
+}  /* Display define como se comporta un elemento (como se coloca, espacio que ocupa)
+al usar display block, le digo al elemento que se baje a otra linea,
+                            ahi le puedo dar ancho, alto. Cuando quiero poner algo debajo de otra cosa, este es, que ocupe toda la linea
+Flex se usa para organizar hijos dentro de un contenedor*/
