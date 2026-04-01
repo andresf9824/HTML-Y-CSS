@@ -1,0 +1,56 @@
+/*
+ESPECIFICIDAD: Es como la puntuación de un estilo. Si le digo a un elemento que sea azul o rojo, 
+depende de la especificidad (puntuacion) para definir cual es el color.
+
+CASCADA: El orden en que damos las propiedades (estilos css) si importa, y si dos reglas tienen la misma especificidad, 
+se aplica la que esta de ultima. Solo entra en juego cuando las dos propiedades tienen el mismo nivel de especificidad
+
+Por Ejemplo:
+
+h1 {
+    color: red;
+}
+
+Pero si para ese mismo h1, he definido una clase, entonces la especificidad es mayor, se pone el color de la clasa
+
+.titulo {
+
+color: blue
+}
+*/
+
+h1 {
+
+    color: blue; /* Especificidad: (0,1,0)*/
+}
+.titulo {
+
+    color:red; /* Especificidad: (0,0,1)*/
+}
+
+#titulo {
+    color: aqua; /*Especificidad: (1,0,0) Por el ID somos mas especificos*/
+}
+
+/*ORDEN DE ESPECIFICIDAD: id - class - elementos. 
+
+Si el estilo se lo damos en linea, es mas importante que darselo por ID*/
+
+/*Important es la palabra mas importante, la que rompe todo (styles, id, class, elementos)
+
+Ejemplo:
+
+h1 {
+
+    color: green ! important
+
+
+}
+
+.class="titulo"
+    {
+        color: blue ! important
+    }
+
+Aunque ambos tienen el mismo nivel de especificidad, el color seria el blue porque clase es mas especifico que el elemento (h1)
+*/
