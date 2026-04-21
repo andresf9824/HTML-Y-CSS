@@ -2,6 +2,29 @@ div {
     padding: 20px
 }
 
+/* Los pseudoelementos se representan con dos puntos :: asi accedo a ellos. Los pseudoelementos son 10*/
+
 h1::first-letter {
     color:red;
+}
+
+div::first-line {
+    color: aqua;
+}
+
+li::marker {
+
+    color: blue;
+}
+
+li::after {
+
+    content: "Despues";
+    color: brown;
+}
+
+li::before {
+
+    content: "Antes";
+    color: rgb(50, 180, 30)
 }
