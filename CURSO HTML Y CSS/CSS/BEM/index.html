@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p>BEM: Bloques, elementos y modificadores, los modificadores son 
+        clases especiales para modificar elementos que estan dentro de los bloques.
+        Un bloque  es un elemento independiente, no necesita de otros.
+    </p>
+    <h1>INGREDIENTES</h1>
+    <ul class="lista">
+        <li class="lista__item item--danino">Sal</li>
+        <li  class="lista__item">Papa</li>
+        <li  class="lista__item item--importante">Harina</li>
+        <li  class="lista__item">Agua</li>
+    </ul> 
+
+     <ul class="lista">
+        <li class="lista__item item--danino">Sal</li> <!-- clase modificadora "item danino para modificar solo la sal"-->
+        <li  class="lista__item">Papa</li>
+        <li  class="lista__item item--importante">Harina</li>  <!-- clase modificadora "item danino para modificar solo la harina"-->
+        <li  class="lista__item">Agua</li>
+    </ul>
+
+     <ul class="lista">
+        <li class="lista__item item--danino">Sal</li>
+        <li  class="lista__item">Papa</li>
+        <li  class="lista__item item--importante">Harina</li>
+        <li  class="lista__item">Agua</li>
+    </ul>
+
+</body>
+</html>
