@@ -1,0 +1,49 @@
+/*body {
+
+    margin: 0;
+}
+
+div  {
+    padding: 20px;
+    background-color: #999;
+}
+
+a {
+    background-color: red;
+    color: #fff;
+    display: block;
+    border: 1px solid #000;
+    margin: 20px;
+   
+}
+*/
+body {
+
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav {
+    background-color: #48e;
+} 
+
+.nav__list {
+    margin: 0;
+}
+
+.nav__item {
+
+    display: inline-block; /*Funciona igual que "Block" pero estos si se apilan. Sirve para elementos  que necesitan estar uno al lado del otro pero con dimensiones*/
+    padding: 10px;
+    background-color: #48e;
+
+}
+
+.nav__item:hover {
+background-color: #6af;
+}
+
+.nav__link {
+    color:black;
+    text-decoration: none;
+}
+
