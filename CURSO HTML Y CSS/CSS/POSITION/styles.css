@@ -1,0 +1,49 @@
+/* body {
+    margin: 0;
+    background-color: #ededed;
+
+
+} */
+
+.body {
+     margin: 0;
+     background-color: #ededed;
+     text-align: center;
+
+}
+.contenedor {
+
+    border: 2px solid #000;
+    margin: 20px; 
+            }
+  
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: white;
+   /* position: relative;  
+    /*display: block;
+    text-align: center*/;
+    
+
+}
+
+.box--blue 
+    {
+        background-color: aqua;
+        position: relative;  /*Position Absolute no mantiene el lugar, se sale del flujo. Relative si mantiene el lugar, ver ejemplos de las 3 cajas. Cambiar el valor por absolute para ver la diferencia. Absoluta busca su elemento padre y se mueve en base a el. Relative reserva su propio espacio en el nevegador y se mueve en base a esos.*/
+        top: 50px;
+        left: 50px;
+        /*top: 50px; /*hacia abajo*/
+       /* left: 50px;
+        bottom: 30px;*/ /* de abajo hacia arriba, va hacia arriba*/
+    /*TOP tiene prioridad sobre bottom, asi como left tiene prioridad sobre rigth. Si esas dos (top y left) están definidas, no hay necesidad de definir las otras.*/
+
+    }
+
+.box--red {
+
+    background-color: red;
+    
+}
