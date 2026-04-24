@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: fixed;  /*Cuando definimos algo como "fixed" la caja siempre se queda ahi, aunque hagamos scroll. Sticky se comporta como relative, hasta que alcanza lo que le dijimos y se comporta como absolute.*/
+    bottom: 0;
+}
+
+.contenedor {
+
+    padding: 50px;
+    background-color: #00f;
+}
