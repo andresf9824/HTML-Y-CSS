@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+/*.box {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    transition-property: color; Propiedad a la que le vamos a generar la transicion
+    transition-duration: 1s; /*Duracion, lo que va a durar la transicion*/
+    /*transition-delay: 2s despues de dos segundos se ejecuta la transicion
+}
+
+.box:hover {
+    color: #fff;
+} */
+
+/*CURVAS DE BEZIER-CURVA DE ANIMACIÓN*/
+
+.box {
+    width: 120px;
+    height: 120px;
+    background-color: #f00;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.14,.86,.29,.95);
+    position: relative;
+    left: 0;
+}
+
+body:hover .box {
+    background-color: blue;
+    left: 400px;
+
+}
