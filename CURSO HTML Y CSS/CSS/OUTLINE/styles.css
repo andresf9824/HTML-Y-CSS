@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 150px;
+    background-color: #f00;
+    margin: auto;
+    margin-top: 50px;
+    border: 5px solid #000; /*con el outline se puede hacer lo mismo con respecto a la estructura*/
+    padding: 10px;
+    outline-width: 10px;
+    outline-color: #00f;
+    outline-style: solid;
+    outline-offset: 10px;
+}
+
+input {
+    border: 2px solid red;
+}
+
+input:focus {
+    border: 2px solid #000;
+}
+
+input:active {
+    border: 2px solid #000;
+
+}
+
+p{
+    text-align: center;
+}
