@@ -5,7 +5,11 @@ body {
 
 .flexbox {
     display: flex;
-    flex-direction: row;
+    flex-direction: ROW; 
+    justify-content: center /*para centrar si uso en el direction row* EJE PRINCIPAL/;
+    align-items: center; /*si quiero centrar y tengo el direction en colunm uso este. Alinea en el eje cruzado*/
+
+    /*flex-wrap: wrap; /*nos permite controlar el comportamiento de los flex item una vez que el espacio en el contenedor es insuficiente para abarcar todos. Se le da al flexbox, pueden cambiar de linea, una debajo del otro. Tambien eta flex-flow*/
 }
 .flex-item {
     
