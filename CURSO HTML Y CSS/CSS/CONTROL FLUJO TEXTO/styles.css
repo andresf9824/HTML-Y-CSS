@@ -15,5 +15,5 @@ body {
 }
 
 h1 {
-    text-wrap: balance;
+    text-wrap: balance; /*Para balancear parrafos, para balancear texto: "Text-Wrapp":pretty*/
 }
