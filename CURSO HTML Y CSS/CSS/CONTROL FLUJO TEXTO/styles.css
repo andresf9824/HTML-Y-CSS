@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+.box {
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1 px solid #0006;
+    white-space:normal ; /*define como se comportan los espacios en blancos. SI SE NOS ESTA POR DESBODAR ALGO: "White-space:nowrap", "text-overflow":ellipsis y overflow:hidden*/
+
+}
+
+h1 {
+    text-wrap: balance;
+}
