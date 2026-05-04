@@ -5,11 +5,13 @@ body {
 
 .flexbox {
     display: flex;
-    flex-direction: column; 
-    /*justify-content: center /*para centrar si uso en el direction row* EJE PRINCIPAL*/
-    align-items: center; /*si quiero centrar y tengo el direction en colunm uso este. Alinea en el eje cruzado. Si tengo mas de un elemento (fila o colunma, es mejor align contents)*/
+    flex-direction: row; 
+    justify-content: center /*para centrar si uso en el direction row* EJE PRINCIPAL*/
+    /*align-items: center; /*si quiero centrar y tengo el direction en colunm uso este. Alinea en el eje cruzado. Si tengo mas de un elemento (fila o colunma, es mejor align contents)*/
 
     /*flex-wrap: wrap; /*nos permite controlar el comportamiento de los flex item una vez que el espacio en el contenedor es insuficiente para abarcar todos. Se le da al flexbox, pueden cambiar de linea, una debajo del otro. Tambien eta flex-flow*/
+    /*GAP: añade separacion entre los hijos del contenedor sin necesidad de margenes*/
+    /*ALIGN Self: se le aplica a los hijos, agarramos un elemento puntual y lo llevamos a donde queremos. Funciona solo cuando usamos "aligns items*/
 }
 .flex-item {
     

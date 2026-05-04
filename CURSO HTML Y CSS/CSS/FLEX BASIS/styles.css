@@ -1,0 +1,36 @@
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row;
+    border: 2px solid #0009;
+    margin: 20px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    color: #fff;
+}
+
+.flex-item {
+    background-color: aquamarine;
+   /* flex-grow: 1;*/  /*Como agarrar los espacios disponibles y los dividieramos en muchas partes, cada elemento (flex item)va a tener una parte de esos espacios disponibles*/
+    flex-shrink: 1; /*define cuanto debe encogerse un elemento, 1 que es por defecto se encoge si es necesario, 0 no se encoge, 2 se encoge el doble que otros elementos. si hay varios elementos en espacios limitados, el navegador necesita encoger su tamaño.*/
+    width: 50px;
+    /*Flex Basis: Empieza midiendo esto, ya luego vemos si te encoges o no Ejemplo: .item {flex-basis 200px} 200px de base, si sobra espacio, crece(flex-grow) si falta espacio, se encoge (flex-shrink) */
+    /*flex grow por defecto es 0, shrink por defecto es 1, basis por defecto es auto.*/ 
+    /*Flex abrevia a las 3: 0 1 auto (Grow, shrink y basis)*/
+}
+
+.flex-item:first-child {
+    background-color: orchid;
+    flex-shrink: 3;
+
+}
+
+.flex-item:last-child {
+    background-color: #f67;
+
+}
