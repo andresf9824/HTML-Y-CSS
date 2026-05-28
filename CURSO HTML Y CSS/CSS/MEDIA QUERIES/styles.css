@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+div, body {
+    box-sizing: border-box;
+}
+
+
+/* iniciamos una media query de impresión.
+@media print 
+    {
+        body {
+            font-size: 12pt;
+        }
+
+    }
+        */
+
+
+.flex-box {
+
+    display: flex;
+
+}
+
+.flex-item {
+    background-color: #ccc;
+    padding: 30px;
+    border: 1px solid red;
+    flex-grow: 1;
+ 
+}
+
+
+/*si la pantalla tiene un ancho de 500 o menos, aplicamo este estilo
+
+@media screen and (max-width :500px)
+{
+    body {
+        font-size: 30px;
+        background-color: #000;
+        color:#fff
+    }
+} */
+
+@media screen and (max-width:480px) {
+    .flexbox {
+        flex-direction: column;
+    }
+}
