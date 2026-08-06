@@ -1,8 +1,6 @@
-/*body{
-    margin: 0;
-    font-family: sans-serif;
-}
-.grid {
+
+
+/*.grid {
     display: grid;
     /* grid-template-columns: 200px 200px 200px; tres colunmas de 200px  Ancho*/ 
     /* grid-template-columns: repeat(3,50px);
@@ -18,12 +16,12 @@
     font-size: 30px;
     color: #fff
 }*/
-
+/*
 body,div {
     box-sizing: border-box;
-}
+} */
 
-.grid {
+/*.grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-template-rows: repeat(3,200px);
@@ -34,12 +32,110 @@ body,div {
     margin: auto;
     margin-top: 30px;
     gap: 20px;
-}
 
+}
+/*
 .grid-item {
     background-color: #48e;
     padding: 10px;
     font-size: 30px;
+} */
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+     display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-height: 100vh;
+
+}
+body, div {
+    box-sizing: border-box;
+   
 }
 
+nav, header, footer, aside, main {
+    padding: 20px;
+    border: 2px solid #444;
+    box-sizing: border-box;
 
+}
+.grid {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(300px, 3fr) minmax(200px, 1fr);
+    grid-template-rows: 1fr;
+    grid-auto-flow: dense;
+    margin: auto;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas: 
+    "nav main aside";
+}
+
+.grid {
+    max-width: 1200px;
+    margin: auto;
+}
+header {
+   
+    background-color: #48e;
+    color: #fff;
+    border-color: #48e;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    max-width: 300px;
+}
+
+main {
+    grid-area: main;
+    min-width: 300px;
+    max-width: 700px;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+
+nav, aside {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+@media screen and (max-width:800px) {
+    aside {
+        display: none;
+        grid-template-columns: minmax(200px, 1fr) minmax(300px, 3fr);
+    }
+
+}
+@media screen and (max-width:580px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "aside";
+    }
+   
+} 
+
+h1 {
+    text-align: center;
+}
