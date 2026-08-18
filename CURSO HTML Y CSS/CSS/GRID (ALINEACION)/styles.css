@@ -1,0 +1,42 @@
+body, div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr, 250px);
+    grid-template-rows: repeat(3, 50px)/*repeat(3,250px)*/;
+    gap: 10px;
+    padding: 10px;
+    justify-items: stretch; /* movemos el contenido de la celda, o sea el hijo, en el eje horizontal*/
+    justify-content: space-evenly; /* movemos directamente la celda (dentro de todo el contenedor), tambien en el eje horizontal*/
+    align-items: start;
+    height: 350px;
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+.grid-item:first-child {
+
+    background-color: #e66;
+    align-self: end;
+}
+
+.grid-item {
+    background-color: #48e;
+    font-size: 30px;
+    max-width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+
+}
+
+.grid-item:hover {
+    opacity: 0.74;
+}
+
+16:43:38 QUEDE
