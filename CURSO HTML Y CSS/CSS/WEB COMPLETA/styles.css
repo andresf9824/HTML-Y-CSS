@@ -22,12 +22,12 @@ div, ul, nav, header, footer, a, li, label, body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    container-type: inline-size;
-    container-name: header;
     position: relative;
     z-index: 10;
     text-align: center;
     font-size: 20px;
+    color: #48e;
+
 }
 .header_open-nav-button {
     color: #48e;
@@ -76,7 +76,7 @@ div, ul, nav, header, footer, a, li, label, body{
 }
 
 .header_nav-item a {
-    color: #48e;
+    color: inherit;
     text-decoration: none;
 
 
@@ -91,7 +91,15 @@ div, ul, nav, header, footer, a, li, label, body{
 
 /*--------------HEADER QUERIES----------*/
 
-@container header (min-width: 600px) {
+@media screen and (min-width: 600px) {
+    .header {
+        padding: 20px;
+        animation: header-movement both;
+        animation-timeline: scroll () ;
+        position: sticky;
+        top: 0;
+        animation-range: 10px 100px ;
+    }
     .header_nav {
         display: block;
         position: static;
@@ -99,6 +107,7 @@ div, ul, nav, header, footer, a, li, label, body{
         width: auto;
         z-index: auto;
         justify-content: space-between;
+        background-color: initial;
 
     }
     .header_nav-list {
@@ -126,6 +135,7 @@ div, ul, nav, header, footer, a, li, label, body{
 .profile {
     container-name: profile ;
     container-type: inline-size;
+    animation: aparecer 2s both;
 }
 
 .profile_wrapper {
@@ -144,7 +154,7 @@ div, ul, nav, header, footer, a, li, label, body{
 .profile_img-container {
     max-height: 500px;
     overflow: hidden;
-  
+
 
 }
 .profile_img {
@@ -286,6 +296,9 @@ h1 {
     display: grid;
     place-content: center;
     border-radius:  8px;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: contain 5% cover 40%;
 }
 
 .portfolio_project:hover {
@@ -338,6 +351,9 @@ h1 {
     padding: 30px 0;
     container-name: form;
     container-type: inline-size;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 20% contain 50%;
 }
 
 .form_form {
@@ -429,3 +445,34 @@ footer {
     font-size: 22px;
 
 }
+
+/*------------ANIMACIONES------------*/
+
+@keyframes header-movement {
+    from {
+        padding: 20px 0;
+        background-color: #fff;
+
+    }
+
+    to {
+        padding: 0;
+        background-color: #0006;
+        color: #fff;
+    }
+    
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        
+
+    }
+
+    to {
+        opacity: 1;
+    }
+    
+}
+
