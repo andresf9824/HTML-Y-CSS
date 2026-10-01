@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-principal: #48e
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.box {
+    margin: 60px auto;
+    font-size: 30px;
+    padding: 0 40px;
+    font-size: clamp (2.4rem,2.2 vw, 4rem);
+    border: 6px solid #000; 
+    width: calc(50% + 50%);}
+
+
+
+/*body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: #48e;
+    display: grid;
+    place-content: center;
+    columns: #fff;
+    margin: 120px auto;
+    font-size: 30px;
+    padding: 0 40px;
+    font-size: clamp(2.4rem,2.2vw,4rem);
+    border: 6px solid #000;
+    /* width: min(600px,800px); /*Max y Min:compara los dos valores y nos devuelve ya sea el min o max, depende del que hayamos puesto
+    width: clamp (900px, 100%,1400px); el primer valor es el minimo que puede tomar, luego el valor ideal, por ultimo, el maximo. Max y min ya no se usan
+
+
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 0;
+}
+*/
