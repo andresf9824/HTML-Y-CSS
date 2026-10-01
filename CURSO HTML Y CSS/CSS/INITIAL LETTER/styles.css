@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: montserrat;
+}
+
+.box {
+    font-size: 30px;
+    padding: 0 40px;
+
+}
+
+p::first-letter {
+    initial-letter: 3 2;
+}
